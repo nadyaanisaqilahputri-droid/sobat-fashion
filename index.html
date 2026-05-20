@@ -34,7 +34,7 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.8);
+background:rgba(0,0,0,0.85);
 backdrop-filter:blur(10px);
 z-index:1000;
 border-bottom:1px solid rgba(255,255,255,0.05);
@@ -68,7 +68,7 @@ align-items:center;
 text-align:center;
 padding:140px 8%;
 background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.8)),
 url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1600&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
@@ -90,7 +90,7 @@ font-size:14px;
 }
 
 .hero h1{
-font-size:70px;
+font-size:68px;
 line-height:1.1;
 margin-bottom:20px;
 }
@@ -249,6 +249,32 @@ font-weight:600;
 cursor:pointer;
 }
 
+/* TESTIMONI */
+
+.testimoni{
+padding:0 8% 100px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.testi-card{
+background:#151515;
+border-radius:24px;
+padding:30px;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.testi-card h3{
+color:#ff4f8b;
+margin-bottom:12px;
+}
+
+.testi-card p{
+color:#bbb;
+line-height:1.7;
+}
+
 /* FOOTER */
 
 footer{
@@ -302,7 +328,7 @@ Sobat Fashion
 <nav>
 <a href="#">Home</a>
 <a href="#produk">Produk</a>
-<a href="#">Promo</a>
+<a href="#review">Review</a>
 <a href="#">Contact</a>
 </nav>
 
@@ -313,17 +339,17 @@ Sobat Fashion
 <div class="hero-content">
 
 <div class="tag">
-Premium Local Brand
+Premium Local Brand Indonesia
 </div>
 
 <h1>
-Style Lokal Dengan<br>
-Vibes <span>Luxury Fashion</span>
+Fashion Lokal Dengan<br>
+Vibes <span>Luxury Modern</span>
 </h1>
 
 <p>
 Koleksi fashion premium dengan desain minimalis,
-modern, dan aesthetic untuk generasi masa kini.
+clean aesthetic, dan modern untuk generasi masa kini.
 </p>
 
 <button class="hero-btn" onclick="scrollProduk()">
@@ -339,7 +365,7 @@ Shop Now
 <h2>Exclusive Collection</h2>
 
 <p>
-Koleksi produk premium tanpa model, clean & aesthetic
+Koleksi produk aesthetic tanpa model/orang
 </p>
 
 </div>
@@ -359,7 +385,7 @@ BEST SELLER
 <h3>Essential T-Shirt</h3>
 
 <div class="desc">
-Kaos premium oversized dengan bahan cotton combed yang nyaman dipakai sehari-hari.
+Kaos premium oversized berbahan cotton combed yang nyaman dipakai sehari-hari.
 </div>
 
 <div class="price">
@@ -401,3 +427,148 @@ Add To Cart
 </div>
 
 </div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<div class="badge">
+LIMITED
+</div>
+
+<h3>Minimal Jacket</h3>
+
+<div class="desc">
+Jaket clean modern dengan nuansa classy dan elegant untuk outfit premium.
+</div>
+
+<div class="price">
+Rp329.000
+</div>
+
+<button class="buy-btn" onclick="beli('Minimal Jacket')">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<div class="badge">
+TRENDING
+</div>
+
+<h3>Luxury Sneakers</h3>
+
+<div class="desc">
+Sneakers casual premium dengan desain modern dan nyaman dipakai harian.
+</div>
+
+<div class="price">
+Rp459.000
+</div>
+
+<button class="buy-btn" onclick="beli('Luxury Sneakers')">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="promo">
+
+<h2>
+New Collection 2026
+</h2>
+
+<p>
+Nikmati promo spesial hingga 40% untuk pembelian pertama
+</p>
+
+<button>
+Claim Promo
+</button>
+
+</section>
+
+<div class="title" id="review">
+
+<h2>Customer Review</h2>
+
+<p>
+Review customer Sobat Fashion
+</p>
+
+</div>
+
+<section class="testimoni">
+
+<div class="testi-card">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+"Website nya clean banget dan vibes nya kayak brand fashion mahal."
+</p>
+
+</div>
+
+<div class="testi-card">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+"Desain hitam pink nya aesthetic dan nyaman dibuka di HP."
+</p>
+
+</div>
+
+<div class="testi-card">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+"Produk tampil premium walaupun tanpa model/orang."
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Sobat Fashion — Premium Local Brand Indonesia
+
+</footer>
+
+<script>
+
+function beli(nama){
+
+alert(nama + " berhasil ditambahkan ke keranjang!");
+
+}
+
+function scrollProduk(){
+
+document.getElementById("produk").scrollIntoView({
+behavior:'smooth'
+});
+
+}
+
+</script>
+
+</body>
+</html>
